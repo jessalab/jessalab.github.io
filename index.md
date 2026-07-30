@@ -5,7 +5,7 @@ tagline: We are a computational biology lab studying gene regulation in developm
 drawings:
   - image: /assets/img/Waddington.jpg
     caption: "We study how gene regulatory programs are established during development, how they are disrupted in disease, and how they can be engineered for therapeutics."
-    hover: "The lesser-known view of the Waddington epigenetic landscape, with pegs and wires (genes and regulatory interactions) that shape the cell fate landscape. A snapped write represents a disrupted interaction, and a new wire represents a therapeutic intervention."
+    hover: "Waddington's view of the epigenetic landscape from below, with pegs and wires (genes and regulatory interactions) that shape the cell fate landscape. We add a snapped wire representing a disrupted interaction, and a new wire representing a therapeutic intervention."
     accent: "#134e4a"
   - image: /assets/img/Interp.jpg
     caption: "We combine functional genomics, multi-modal data analysis, and interpretable machine learning approaches that let us crack open black box models of gene regulation to extract mechanistic insights."
