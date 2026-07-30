@@ -10,7 +10,14 @@ layout: default
   <div class="drawings-grid">
     {% for drawing in page.drawings %}
       <figure class="drawing">
-        <img src="{{ drawing.image | relative_url }}" alt="{{ drawing.caption | strip_html }}">
+        <div class="drawing-image-wrap"{% if drawing.accent %} style="--hover-accent: {{ drawing.accent }};"{% endif %}>
+          <img src="{{ drawing.image | relative_url }}" alt="{{ drawing.caption | strip_html }}">
+          {% if drawing.hover %}
+            <div class="drawing-hover">
+              <p>{{ drawing.hover }}</p>
+            </div>
+          {% endif %}
+        </div>
         <figcaption>{{ drawing.caption }}</figcaption>
       </figure>
     {% endfor %}
