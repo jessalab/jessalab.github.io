@@ -1,0 +1,46 @@
+title: Jessa Lab
+description: >-
+  We are a computational biology lab studying gene regulation in
+  development, disease, and for therapeutics.
+url: "https://jessalab.github.io"
+baseurl: ""
+theme: null
+
+# Path to a vector/raster logo (e.g. "/assets/img/logo.svg"). Leave null to
+# render the "Jessa Lab" text wordmark instead.
+logo: null
+
+accent: "#2543d8"
+accent2: "#3e2723"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+collections:
+  publications:
+    output: false
+  news:
+    output: false
+
+defaults:
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: none
+  - scope:
+      path: ""
+      type: news
+    values:
+      layout: none
+
+plugins:
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - PLAN.md
+  - README.md

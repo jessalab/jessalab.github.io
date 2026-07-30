@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<section class="hero">
+  <p class="tagline">{{ page.tagline | default: site.description }}</p>
+</section>
+
+{% if page.drawings %}
+<section class="drawings">
+  <div class="drawings-grid">
+    {% for drawing in page.drawings %}
+      <figure class="drawing">
+        <img src="{{ drawing.image | relative_url }}" alt="{{ drawing.caption | strip_html }}">
+        <figcaption>{{ drawing.caption }}</figcaption>
+      </figure>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+<section class="news">
+  <h2>News</h2>
+  <div class="news-list">
+    {% assign news_items = site.news | sort: "date" | reverse %}
+    {% for item in news_items %}
+      {% include news-item.html item=item %}
+    {% endfor %}
+  </div>
+</section>
+
+{{ content }}

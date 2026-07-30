@@ -1,0 +1,15 @@
+---
+slug: jessa2019-py
+title: "Stalled developmental programs at the root of pediatric brain tumors"
+authors: "Selin Jessa, Alexis Blanchet-Cohen, Brian Krug, Maria Vladoiu, Marie Coutelier, Damien Faury, Brice Poreau, Nicolas De Jay, Steven Hébert, Jean Monlong, W Todd Farmer, Laura K Donovan, Yixing Hu, Melissa K McConechy, Florence M G Cavalli, Leonie G Mikael, Benjamin Ellezam, Maxime Richer, Andréa Allaire, Alexander G Weil, Jeffrey Atkinson, Jean-Pierre Farmer, Roy W R Dudley, Valerie Larouche, Louis Crevier, Steffen Albrecht, Mariella G Filbin, Hervé Sartelet, Pierre-Eric Lutz, Corina Nagy, Gustavo Turecki, Santiago Costantino, Peter B Dirks, Keith K Murai, Guillaume Bourque, Jiannis Ragoussis, Livia Garzia, Michael D Taylor^, Nada Jabado^, Claudia L Kleinman^"
+year: 2019
+venue: Nature Genetics
+doi: 10.1038/s41588-019-0531-7
+link: https://www.nature.com/articles/s41588-019-0531-7
+pdf: https://rdcu.be/c2b7g
+description: >-
+  We generate a single-cell RNAseq atlas of developing brain regions where
+  pediatric brain tumors occur, and use a data-driven approach to
+  systematically nominate cell-of-origin. This work was selected as one of
+  the <a href="https://reporter.mcgill.ca/two-mcgill-led-brain-cancer-studies-among-top-10-discoveries-in-quebec-for-2020/">top 10 discoveries in Quebec for 2020</a>!
+---

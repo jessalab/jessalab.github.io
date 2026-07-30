@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<h1 class="page-title">{{ page.title }}</h1>
+{{ content }}
+
+<p class="pubs-legend"><span><sup>*</sup> co-first author</span><span><sup>^</sup> co-corresponding author</span></p>
+
+{% assign selected_pubs = site.publications | where: "selected", true | sort: "year" | reverse %}
+{% if selected_pubs.size > 0 %}
+  <h2 class="pubs-section-title">Selected publications</h2>
+  <div class="pub-list pub-list-no-rule">
+    {% for pub in selected_pubs %}
+      {% include pub-card.html pub=pub no_id=true %}
+    {% endfor %}
+  </div>
+{% endif %}
+
+{% assign contributing_pubs = site.publications | where: "contributing", true | sort: "year" | reverse %}
+{% if contributing_pubs.size > 0 %}
+  <h2 class="pubs-section-title">Contributions to collaborative work</h2>
+  <div class="pub-list pub-list-no-rule">
+    {% for pub in contributing_pubs %}
+      {% include pub-card.html pub=pub %}
+    {% endfor %}
+  </div>
+  <p class="pubs-more"><a href="https://selinjessa.com/publications/">See Selin's pre-2025 publications here.</a></p>
+{% endif %}

@@ -1,0 +1,37 @@
+{% assign pub = include.pub %}
+<div class="pub{% if pub.thumbnail %} pub-with-thumb{% endif %}"{% unless include.no_id %} id="{{ pub.slug }}"{% endunless %}>
+  {% if pub.thumbnail %}
+    <img class="pub-thumb" src="{{ pub.thumbnail | relative_url }}" alt="">
+  {% endif %}
+  <div class="pub-body">
+    <div class="pub-year">{{ pub.year }}</div>
+    <p class="pub-title">{{ pub.title }}</p>
+    <p class="pub-authors">
+      {% assign author_list = pub.authors | split: ", " %}
+      {% for author in author_list %}
+        {% assign is_co_first = false %}
+        {% assign is_co_corresponding = false %}
+        {% if author contains "*" %}{% assign is_co_first = true %}{% endif %}
+        {% if author contains "^" %}{% assign is_co_corresponding = true %}{% endif %}
+        {% assign clean_author = author | remove: "*" | remove: "^" %}
+        {% assign is_lab_member = false %}
+        {% for member in site.data.team %}
+          {% assign member_name = member.name | split: "," | first %}
+          {% if member_name == clean_author %}{% assign is_lab_member = true %}{% endif %}
+        {% endfor %}
+        {% if is_lab_member %}<strong>{{ clean_author }}</strong>{% else %}{{ clean_author }}{% endif %}{% if is_co_first %}<sup>*</sup>{% endif %}{% if is_co_corresponding %}<sup>^</sup>{% endif %}{% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+    </p>
+    <div class="pub-venue">
+      {% if pub.venue %}<span class="venue-name">{{ pub.venue }}</span>{% endif %}
+      <span class="pub-links">
+        {% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}">doi</a>{% endif %}
+        {% if pub.link %}<a href="{{ pub.link }}">link</a>{% endif %}
+        {% if pub.pdf %}<a href="{{ pub.pdf }}">pdf</a>{% endif %}
+        {% if pub.code %}<a href="{{ pub.code }}">code</a>{% endif %}
+        {% if pub.commentary %}<a href="{{ pub.commentary }}">commentary</a>{% endif %}
+      </span>
+    </div>
+    {% if pub.description %}<p class="pub-description">{{ pub.description }}</p>{% endif %}
+  </div>
+</div>

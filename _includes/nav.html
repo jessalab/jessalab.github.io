@@ -1,0 +1,17 @@
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="wordmark" href="{{ '/' | relative_url }}">
+      {% if site.logo %}
+        <img class="wordmark-logo" src="{{ site.logo | relative_url }}" alt="{{ site.title }}">
+      {% else %}
+        {{ site.title }}
+      {% endif %}
+    </a>
+    <nav class="site-nav">
+      <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a>
+      <a href="{{ '/team/' | relative_url }}" {% if page.url contains '/team/' %}class="active"{% endif %}>Team</a>
+      <a href="{{ '/research/' | relative_url }}" {% if page.url contains '/research' %}class="active"{% endif %}>Research</a>
+      <a href="{{ '/publications/' | relative_url }}" {% if page.url contains '/publications' %}class="active"{% endif %}>Publications</a>
+    </nav>
+  </div>
+</header>

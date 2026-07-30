@@ -1,0 +1,15 @@
+We're going to build a very minimalist, refined, modern, artistic lab website and we want the following characteristics:
+- Jekyll or Astro
+- Easily updatable by simple editing of markdown files containing the content
+- Define an accent color: #2543d8
+- Home page has: Jessa Lab, top left in accent color, and right side: Team, Research
+- Home page:
+	- a one line: We are a computational biology lab studying gene regulation in development, disease, and for therapeutics
+	- space for two square drawings that represent the lab's work, with a brief caption below (collapse to column for narrow)
+	- a section for short news items (date and text), each of which is specified by markdown
+- Research page:
+	- a template per project, with a title, a short description, and image, and representative publications
+- Publications:
+	- this can be modeled off my site at ../sjessa.github.io (with the same cards for code/etc)
+	- can be read from a bib file with authors higlighted based on name matching a file of lab members
+- Generally use serif for titles, Garamond, and sans serif for body text

@@ -1,0 +1,23 @@
+{% assign member = include.member %}
+<div class="team-member">
+  {% if member.photo %}
+    <img class="team-photo" src="{{ member.photo | relative_url }}" alt="{{ member.name }}">
+  {% else %}
+    <div class="team-photo team-photo-placeholder" aria-hidden="true">{{ member.name | slice: 0 }}</div>
+  {% endif %}
+  <div class="team-info">
+    <p class="team-name">{{ member.name }}</p>
+    <p class="team-role">{{ member.role }}</p>
+    {% if member.bio %}<div class="team-bio">{{ member.bio | markdownify }}</div>{% endif %}
+    {% if member.email %}<p class="team-email">{{ member.email }}</p>{% endif %}
+    {% if member.scholar or member.orcid or member.github or member.bluesky or member.linkedin %}
+      <p class="team-links">
+        {% if member.scholar %}<a href="https://scholar.google.com/citations?user={{ member.scholar }}" aria-label="{{ member.name }} on Google Scholar" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>{% endif %}
+        {% if member.orcid %}<a href="https://orcid.org/{{ member.orcid }}" aria-label="{{ member.name }} on ORCID" title="ORCID"><i class="fa-brands fa-orcid"></i></a>{% endif %}
+        {% if member.github %}<a href="https://github.com/{{ member.github }}" aria-label="{{ member.name }} on GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a>{% endif %}
+        {% if member.bluesky %}<a href="https://bsky.app/profile/{{ member.bluesky }}" aria-label="{{ member.name }} on Bluesky" title="Bluesky"><i class="fa-brands fa-bluesky"></i></a>{% endif %}
+        {% if member.linkedin %}<a href="https://www.linkedin.com/in/{{ member.linkedin }}" aria-label="{{ member.name }} on LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>{% endif %}
+      </p>
+    {% endif %}
+  </div>
+</div>
