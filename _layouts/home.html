@@ -17,12 +17,58 @@ layout: default
               <p>{{ drawing.hover }}</p>
             </div>
           {% endif %}
+          <button type="button" class="drawing-expand" aria-label="View full size" data-full-src="{{ drawing.image | relative_url }}" data-full-alt="{{ drawing.caption | strip_html | escape }}">
+            <i class="fa-solid fa-expand" aria-hidden="true"></i>
+          </button>
         </div>
         <figcaption>{{ drawing.caption }}</figcaption>
       </figure>
     {% endfor %}
   </div>
 </section>
+
+<div class="lightbox" id="drawing-lightbox">
+  <button type="button" class="lightbox-close" aria-label="Close">
+    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+  </button>
+  <img class="lightbox-img" src="" alt="">
+</div>
+
+<script>
+  (function () {
+    var lightbox = document.getElementById('drawing-lightbox');
+    var lightboxImg = lightbox.querySelector('.lightbox-img');
+    var closeBtn = lightbox.querySelector('.lightbox-close');
+
+    function openLightbox(src, alt) {
+      lightboxImg.src = src;
+      lightboxImg.alt = alt;
+      lightbox.classList.add('is-open');
+      document.body.classList.add('lightbox-open');
+      closeBtn.focus();
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove('is-open');
+      document.body.classList.remove('lightbox-open');
+      lightboxImg.src = '';
+    }
+
+    document.querySelectorAll('.drawing-expand').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        openLightbox(btn.dataset.fullSrc, btn.dataset.fullAlt);
+      });
+    });
+
+    closeBtn.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', function (e) {
+      if (e.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && lightbox.classList.contains('is-open')) closeLightbox();
+    });
+  })();
+</script>
 {% endif %}
 
 <section class="news">
