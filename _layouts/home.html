@@ -16,6 +16,9 @@ layout: default
             <div class="drawing-hover">
               <p>{{ drawing.hover }}</p>
             </div>
+            <button type="button" class="drawing-info" aria-label="Show description" aria-expanded="false">
+              <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
+            </button>
           {% endif %}
           <button type="button" class="drawing-expand" aria-label="View full size" data-full-src="{{ drawing.image | relative_url }}" data-full-alt="{{ drawing.caption | strip_html | escape }}">
             <i class="fa-solid fa-expand" aria-hidden="true"></i>
@@ -57,6 +60,15 @@ layout: default
     document.querySelectorAll('.drawing-expand').forEach(function (btn) {
       btn.addEventListener('click', function () {
         openLightbox(btn.dataset.fullSrc, btn.dataset.fullAlt);
+      });
+    });
+
+    document.querySelectorAll('.drawing-info').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var wrap = btn.closest('.drawing-image-wrap');
+        var isActive = wrap.classList.toggle('is-active');
+        btn.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+        btn.blur();
       });
     });
 

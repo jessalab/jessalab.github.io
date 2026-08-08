@@ -207,9 +207,17 @@ a:focus-visible {
   pointer-events: none;
 }
 
-.drawing-image-wrap:hover .drawing-hover,
-.drawing-image-wrap:focus-within .drawing-hover {
+.drawing-image-wrap.is-active .drawing-hover {
   opacity: 1;
+  pointer-events: auto;
+}
+
+@media (hover: hover) {
+  .drawing-image-wrap:hover .drawing-hover,
+  .drawing-image-wrap:focus-within .drawing-hover {
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
 
 .drawing-hover p {
@@ -250,9 +258,32 @@ a:focus-visible {
   opacity: 1;
 }
 
+.drawing-info {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  z-index: 3;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--hover-accent, var(--accent2));
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+}
+
 @media (hover: none) {
   .drawing-expand {
-    opacity: 1;
+    display: none;
+  }
+
+  .drawing-info {
+    display: flex;
   }
 }
 
