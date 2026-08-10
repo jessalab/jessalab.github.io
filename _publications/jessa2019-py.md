@@ -7,9 +7,4 @@ venue: Nature Genetics
 doi: 10.1038/s41588-019-0531-7
 link: https://www.nature.com/articles/s41588-019-0531-7
 pdf: https://rdcu.be/c2b7g
-description: >-
-  We generate a single-cell RNAseq atlas of developing brain regions where
-  pediatric brain tumors occur, and use a data-driven approach to
-  systematically nominate cell-of-origin. This work was selected as one of
-  the <a href="https://reporter.mcgill.ca/two-mcgill-led-brain-cancer-studies-among-top-10-discoveries-in-quebec-for-2020/">top 10 discoveries in Quebec for 2020</a>!
 ---

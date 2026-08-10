@@ -8,9 +8,4 @@ doi: 10.1016/j.cell.2020.11.012
 link: https://linkinghub.elsevier.com/retrieve/pii/S0092867420315294
 pdf: https://www.cell.com/action/showPdf?pii=S0092-8674%2820%2931529-4
 code: https://github.com/fungenomics/G34-gliomas
-description: >-
-  We show that despite being histologically considered gliomas, a subtype
-  of Histone 3 mutant childhood brain tumors likely arise in the interneuron
-  lineage in the developing telencephalon; and that these tumors co-opt the
-  PDGFRA oncogene to drive tumorigenesis.
 ---

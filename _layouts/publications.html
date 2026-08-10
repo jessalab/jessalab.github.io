@@ -24,5 +24,14 @@ layout: default
       {% include pub-card.html pub=pub %}
     {% endfor %}
   </div>
-  <p class="pubs-more"><a href="https://selinjessa.com/publications/">See Selin's pre-2025 publications here.</a></p>
+{% endif %}
+
+{% assign earlier_pubs = site.publications | where_exp: "pub", "pub.selected != true" | where_exp: "pub", "pub.contributing != true" | sort: "year" | reverse %}
+{% if earlier_pubs.size > 0 %}
+  <h2 class="pubs-section-title">2025 and prior</h2>
+  <div class="pub-list pub-list-no-rule">
+    {% for pub in earlier_pubs %}
+      {% include pub-card.html pub=pub %}
+    {% endfor %}
+  </div>
 {% endif %}

@@ -8,10 +8,5 @@ doi: 10.1038/s41588-022-01205-w
 link: https://www.nature.com/articles/s41588-022-01205-w
 pdf: https://rdcu.be/c2b7e
 code: https://github.com/fungenomics/HGG-oncohistones
-description: >-
-  Using single-cell and bulk transcriptomics and epigenomics, we provide
-  molecular evidence that deadly childhood gliomas with K27M mutations in
-  different Histone 3 variants arise from distinct anatomical domains in the
-  developing brain. See a News & Views on ours and complementary work
-  <a href="https://www.nature.com/articles/s41588-022-01231-8">here</a>.
+commentary: https://www.nature.com/articles/s41588-022-01231-8
 ---
