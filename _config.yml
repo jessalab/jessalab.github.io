@@ -2,9 +2,11 @@ title: Jessa Lab
 description: >-
   We are a computational biology lab studying gene regulation in
   development, disease, and for therapeutics.
-url: "https://jessalab.github.io"
+url: "https://www.jessalab.org"
 baseurl: ""
 theme: null
+author: "Selin Jessa"
+title_separator: "/"
 
 # Path to a vector/raster logo (e.g. "/assets/img/logo.svg"). Leave null to
 # render the "Jessa Lab" text wordmark instead.
@@ -37,6 +39,8 @@ defaults:
 
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 exclude:
   - Gemfile
