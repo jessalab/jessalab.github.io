@@ -2,7 +2,7 @@
 layout: default
 ---
 <section class="hero">
-  <p class="tagline">{{ page.tagline | default: site.description }}</p>
+  <h1 class="tagline">{{ page.tagline | default: site.description }}</h1>
 </section>
 
 {% if page.drawings %}
@@ -11,7 +11,7 @@ layout: default
     {% for drawing in page.drawings %}
       <figure class="drawing">
         <div class="drawing-image-wrap"{% if drawing.accent %} style="--hover-accent: {{ drawing.accent }};"{% endif %}>
-          <img class="drawing-photo" src="{{ drawing.image | relative_url }}" alt="{{ drawing.caption | strip_html }}">
+          <img class="drawing-photo" src="{{ drawing.image | relative_url }}" alt="">
           {% if drawing.hover %}
             <div class="drawing-hover">
               <p>{{ drawing.hover }}</p>

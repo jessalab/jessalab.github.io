@@ -4,7 +4,7 @@
   --highlight: #f0a83c;
   --ink: #000000;
   --ink-soft: #4a4a4a;
-  --ink-faint: #7a7a7a;
+  --ink-faint: #666666;
   --paper: #ffffff;
   --bg: #ffffff;
   --rule: #e4e4e4;
@@ -51,6 +51,13 @@ a:focus-visible {
   background-color: var(--highlight);
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
+}
+
+.news-text a,
+.research-page a,
+.team-bio a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .wrap {
@@ -201,7 +208,7 @@ a:focus-visible {
   align-items: center;
   justify-content: center;
   padding: 24px;
-  background: color-mix(in srgb, var(--hover-accent, var(--accent2)) 88%, transparent);
+  background: var(--hover-accent, var(--accent2));
   opacity: 0;
   transition: opacity 0.2s ease;
   pointer-events: none;
