@@ -485,6 +485,35 @@ body.lightbox-open {
   }
 }
 
+.team-note {
+  margin-top: 32px;
+  max-width: 720px;
+  color: var(--ink-soft);
+}
+
+.team-callout {
+  background: rgba(59, 39, 176, 0.08);
+  border-radius: 4px;
+  padding: 14px 18px;
+  margin-bottom: 24px;
+}
+
+.team-callout p {
+  margin: 0;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.team-note h3 {
+  margin: 20px 0 8px;
+  font-size: 1.1rem;
+  color: var(--ink);
+}
+
+.team-note p {
+  margin: 0 0 12px;
+}
+
 /* Research */
 
 .page-intro {

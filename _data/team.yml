@@ -1,5 +1,7 @@
 - name: Selin Jessa, PhD
-  role: Investigator, Lunenfeld-Tanenbaum Research Institute
+  role: |-
+    Investigator, Lunenfeld-Tanenbaum Research Institute
+    Assistant Professor, Department of Molecular Genetics, University of Toronto
   photo: /assets/img/team/selin-jessa.jpg
   bio: >-
     Selin joins the LTRI on September 1st, 2026, after a postdoc at Stanford University in the
@@ -9,10 +11,10 @@
     models to infer rules of transcription factor binding site organization in human development. Prior
     to that, she spent ten years in Montreal. At McGill, she completed a Joint Honours in Computer Science and Biology,
     and was a founding member of the [ECOLE sustainability project](https://ecoleproject.com/). She then pursued a PhD in the lab of [Claudia Kleinman](https://www.functionalgenomics.ca/index.html)
-    at the Lady Davis Institute and McGill University in the Quantitative Life Sciences program, where she used data-driven
-    approaches to identify cell-of-origin in several subtypes of deadly pediatric brain tumors. There,
+    at the Lady Davis Institute and McGill University as part of the inaugural cohort of the [Quantitative Life Sciences program](https://www.mcgill.ca/qls/).
+    During her PhD, she used data-driven approaches to identify cell-of-origin in several subtypes of deadly pediatric brain tumors. There,
     she got hooked on the questions of cell identity and how it's established in development and disrupted in disease
-    that she continues to study today!
+    that she continues to study today.
   email: jessa at lunenfeld dot ca
   website: www.selinjessa.com
   github: sjessa

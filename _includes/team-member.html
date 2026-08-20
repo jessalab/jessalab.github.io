@@ -7,7 +7,7 @@
   {% endif %}
   <div class="team-info">
     <p class="team-name">{{ member.name }}</p>
-    <p class="team-role">{{ member.role }}</p>
+    <p class="team-role">{{ member.role | newline_to_br }}</p>
     {% if member.bio %}<div class="team-bio">{{ member.bio | markdownify }}</div>{% endif %}
     {% if member.email %}<p class="team-email">{{ member.email }}</p>{% endif %}
     {% if member.website or member.scholar or member.orcid or member.github or member.bluesky or member.linkedin %}
