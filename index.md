@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Home
-tagline: We are a computational biology lab studying gene regulation in development, disease, and therapeutic applications.
+tagline: We are a computational biology lab in Toronto, Canada studying gene regulation in development, disease, and therapeutic applications.
 drawings:
   - image: /assets/img/Waddington.jpg
     caption: "We study how gene regulatory programs are established during development, how they are disrupted in disease, and how they can be engineered for therapeutics."

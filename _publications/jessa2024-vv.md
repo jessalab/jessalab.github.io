@@ -2,6 +2,7 @@
 slug: jessa2024-vv
 title: "FOXR2 targets LHX6+/DLX+ neural lineages to drive CNS neuroblastoma"
 authors: "Selin Jessa*, Antonella De Cola*, Bhavyaa Chandarana*, Michael McNicholas, Steven Hébert, Adam Ptack, Damien Faury, Jessica W Tsai, Andrey Korshunov, Timothy N Phoenix, Benjamin Ellezam, David T W Jones, Michael D Taylor, Pratiti Bandopadhayay, Manav Pathania^, Nada Jabado^, Claudia L Kleinman^"
+selected: true
 year: 2024
 venue: Cancer Research
 doi: 10.1158/0008-5472.CAN-24-2248
