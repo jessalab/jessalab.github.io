@@ -22,6 +22,14 @@ permalink: /join/
   <p>
     Summer students are exclusively selected from successful applicants to the Research Training
     Centre (RTC) at the Lunenfeld-Tanenbaum Research Institute. Keep an eye out for applications
-    in early 2027, due on February 28th of each year.
+    at the end of 2026, typically due early 2027. Undergraduate students interested
+    in working in the lab are welcome to email Selin ahead of time to discuss availability
+    and possible projects.
+  </p>
+
+  <h3>Undergraduate research course students</h3>
+  <p>
+    Students interested in completing a research project in the lab for an undergraduate
+    research course at UofT (especially MoGen) should email Selin to discuss opportunities.
   </p>
 </div>
