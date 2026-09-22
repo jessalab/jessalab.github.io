@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Home
+title: Jessa Lab
 tagline: We are a computational biology lab in Toronto, Canada studying gene regulation in development, disease, and therapeutic applications.
 drawings:
   - image: /assets/img/Waddington.jpg
