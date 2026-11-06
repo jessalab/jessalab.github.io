@@ -14,8 +14,8 @@ permalink: /join/
   <p>
     Our group is part of the Molecular Genetics department at UofT, which has a central
     admission committee and a rotation system. Graduate students interested in joining the
-    lab must first be accepted in Molecular Genetics. First-year students should email Selin
-    to discuss rotation opportunities.
+    lab must first be accepted in Molecular Genetics. Admitted first-year students should email Selin
+    to discuss rotation opportunities. <b>We do not have further capacity to sponsor applicants for Fall 2027 admission.</b>
   </p>
 
   <h3>Summer students for 2027</h3>
@@ -29,7 +29,12 @@ permalink: /join/
 
   <h3>Undergraduate research course students</h3>
   <p>
-    Students interested in completing a research project in the lab for an undergraduate
-    research course at UofT (especially MoGen) should email Selin to discuss opportunities.
+    In general, students interested in completing a research project in the lab for an undergraduate
+    research course at UofT (especially through MoGen) should email Selin to discuss opportunities. <b>We are at capacity for Winter/Spring 2027.</b>
+  </p>
+
+  <h3>Advice to prospective applicants</h3>
+  <p>
+    An email written by you, in your words, about what you find interesting about our work and what you're excited about researching, will be much more favourably received than one written by AI.
   </p>
 </div>

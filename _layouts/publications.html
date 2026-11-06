@@ -18,7 +18,7 @@ layout: default
 
 {% assign contributing_pubs = site.publications | where: "contributing", true | sort: "year" | reverse %}
 {% if contributing_pubs.size > 0 %}
-  <h2 class="pubs-section-title">Contributions to collaborative work</h2>
+  <h2 class="pubs-section-title">Recent contributions to collaborative work</h2>
   <div class="pub-list pub-list-no-rule">
     {% for pub in contributing_pubs %}
       {% include pub-card.html pub=pub %}

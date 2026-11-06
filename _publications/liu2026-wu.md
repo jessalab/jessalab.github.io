@@ -14,5 +14,5 @@ description: >-
   Selin's postdoc work using deep learning in a new fetal single-cell atlas
   to study the organization of transcription factor binding sites in
   human development, and where they're perturbed in complex traits.
-  Highlighted in <a href="https://www.nature.com/articles/s41588-026-02620-z">Nature Genetics</a>.
+  Highlighted in <a href="https://www.nature.com/articles/s41588-026-02620-z">Nature Genetics</a>. 
 ---

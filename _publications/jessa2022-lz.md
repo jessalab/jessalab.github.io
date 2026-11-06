@@ -2,7 +2,6 @@
 slug: jessa2022-lz
 title: "K27M in canonical and noncanonical H3 variants occurs in distinct oligodendroglial cell lineages in brain midline gliomas"
 authors: "Selin Jessa*, Abdulshakour Mohammadnia*, Ashot S Harutyunyan*, Maud Hulswit, Srinidhi Varadharajan, Hussein Lakkis, Nisha Kabir, Zahedeh Bashardanesh, Steven Hébert, Damien Faury, Maria C Vladoiu, Samantha Worme, Marie Coutelier, Brian Krug, Augusto Faria Andrade, Manav Pathania, Andrea Bajic, Alexander G Weil, Benjamin Ellezam, Jeffrey Atkinson, Roy W R Dudley, Jean-Pierre Farmer, Sebastien Perreault, Benjamin A Garcia, Valérie Larouche, Mathieu Blanchette, Livia Garzia, Aparna Bhaduri, Keith L Ligon, Pratiti Bandopadhayay, Michael D Taylor, Stephen C Mack, Nada Jabado^, Claudia L Kleinman^"
-selected: true
 year: 2022
 venue: Nature Genetics
 doi: 10.1038/s41588-022-01205-w

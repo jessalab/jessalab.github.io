@@ -5,7 +5,7 @@
   {% endif %}
   <div class="pub-body">
     <div class="pub-year">{{ pub.year }}</div>
-    <p class="pub-title">{{ pub.title }}</p>
+    <p class="pub-title">{{ pub.title | markdownify | remove: "<p>" | remove: "</p>" | strip }}</p>
     <p class="pub-authors">
       {% assign author_list = pub.authors | split: ", " %}
       {% for author in author_list %}
@@ -32,6 +32,6 @@
         {% if pub.commentary %}<a href="{{ pub.commentary }}">commentary</a>{% endif %}
       </span>
     </div>
-    {% if pub.description %}<p class="pub-description">{{ pub.description }}</p>{% endif %}
+    {% if pub.description %}<p class="pub-description">{{ pub.description | markdownify | remove: "<p>" | remove: "</p>" | strip }}</p>{% endif %}
   </div>
 </div>
